@@ -1,11 +1,11 @@
-# phoilosophers
+# Phoilosophers
 
-## 説明
+## ✅説明
 
-C言語にて「食事する哲学者」の問題を解きます。<br>
+C言語にて「食事する哲学者」の問題を解きます💪<br>
 マルチスレッドプログラミングの問題です。<br>
 
-## 環境とファイル階層
+## ✅環境とファイル階層
 
 ```
 > uname -a
@@ -33,7 +33,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 |--utils.c
 ```
 
-## 引数の説明
+## ✅引数の説明
 
 ```
 ./philo [number_of_philosophers] [time_to_die] [time_to_eat time_to_sleep] [number_of_times_each_philosopher_must_eat]
@@ -66,7 +66,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 指定しない場合、哲学者が死亡するとシミュレーションが停止します。<br>
 条件：`0 < number_of_times_each_philosopher_must_eat`
 
-## 代表的な引数のケースと出力
+## ✅代表的な引数のケースと出力
 
 ```shell
 >  ./philo 3 410 200 200
@@ -115,7 +115,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 
 哲学者1、哲学者3、哲学者2の順番で1回ずつご飯を食べてシュミレーションは終了です。
 
-## エラーケース
+## ✅エラーケース
 
 エラーが起こった際には、それに応じたエラー番号とメッセージが表示されます。<br>
 例えば以下ような感じです。
