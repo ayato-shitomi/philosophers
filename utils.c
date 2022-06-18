@@ -59,7 +59,7 @@ void	smart_sleep(long long time, t_rules *rules)
 	{
 		if (time_diff(i, ft_timestamp()) >= time)
 			break ;
-		usleep(50);
+		usleep(150);
 	}
 	return ;
 }

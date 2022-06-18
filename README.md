@@ -50,16 +50,16 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 ### time_to_die（ミリ秒単位）
 哲学者が死ぬまでの時間。<br>
 哲学者が最後の食事の開始またはシミュレーションの開始から`time_to_die`ミリ秒を食べ始めなかった場合、彼らは死にます☠️<br>
-条件：`0 <= time_to_die`
+条件：`60 <= time_to_die`
 
 ### time_to_eat（ミリ秒単位）
 哲学者が食べるのにかかる時間。<br>
 その間、彼らは2つのフォークを保持する必要があります。<br>
-条件：`0 <= time_to_eat`
+条件：`60 <= time_to_eat`
 
 ### time_to_sleep（ミリ秒単位）
 哲学者が眠るのに費やす時間。<br>
-条件：`0 <= time_to_eat`
+条件：`60 <= time_to_eat`
 
 ### number_of_times_each_philosopher_must_eat（オプションの引数）
 すべての哲学者が少なくとも`number_of_times_each_philosopher_must_eat`回食べた場合、シミュレーションは停止します。<br>

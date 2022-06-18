@@ -56,8 +56,8 @@ int	init_all(t_rules *rules, char **argv)
 	rules->dieded = 0;
 	if (rules->nb_philo < 2 || 200 < rules->nb_philo)
 		return (2);
-	if (rules->time_to_deth < 0 || rules->time_to_eat < 0
-		|| rules->time_to_sleep < 0)
+	if (rules->time_to_deth < 60 || rules->time_to_eat < 60
+		|| rules->time_to_sleep < 60)
 		return (3);
 	if (argv[5])
 	{
