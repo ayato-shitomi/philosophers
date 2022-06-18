@@ -113,7 +113,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 402	2 is eating         // 哲学者2が1回目のご飯を食べている
 ```
 
-哲学者1、哲学者3、哲学者2の順番で1回ずつご飯を食べてシュミレーションは終了です。
+哲学者1、哲学者3、哲学者2の順番で1回ずつご飯を食べてシュミレーションは終了です。<br>
 誰も死なずにシュミレーションを終えることができました👏
 
 ## ✅エラーケース
