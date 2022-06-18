@@ -49,7 +49,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 
 ### time_to_die（ミリ秒単位）
 哲学者が死ぬまでの時間。<br>
-哲学者が最後の食事の開始またはシミュレーションの開始から`time_to_die`ミリ秒を食べ始めなかった場合、彼らは死にます。<br>
+哲学者が最後の食事の開始またはシミュレーションの開始から`time_to_die`ミリ秒を食べ始めなかった場合、彼らは死にます☠️<br>
 条件：`0 <= time_to_die`
 
 ### time_to_eat（ミリ秒単位）
@@ -98,7 +98,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 >  ./philo 3 410 200 200 1
 ```
 
-前回と同様に`3`人の哲学者が食事間隔`410`ms以内、食事時間`200`ms、睡眠時間`200`msで生活します。
+前回と同様に`3`人の哲学者が食事間隔`410`ms以内、食事時間`200`ms、睡眠時間`200`msで生活します。<br>
 ただし、前回と異なるのはそれぞれが`1`回食事をしたらシュミレーションは終了します。
 
 ```
@@ -114,6 +114,7 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 ```
 
 哲学者1、哲学者3、哲学者2の順番で1回ずつご飯を食べてシュミレーションは終了です。
+誰も死なずにシュミレーションを終えることができました👏
 
 ## ✅エラーケース
 
