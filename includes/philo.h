@@ -73,7 +73,7 @@ int			init_all(t_rules *rules, char **argv);
 int			ft_basic_atoi(const char *str);
 long long	ft_timestamp(void);
 long long	time_diff(long long past, long long pres);
-void		smart_sleep(long long time, t_rules *rules);
+void		make_sleep(long long time, t_rules *rules);
 
 // launcher.c
 int			launcher(t_rules *rules);
@@ -82,5 +82,8 @@ void		exit_launcher(t_rules *rules, t_philo *philo);
 // header_usage.c
 void		header(void);
 void		usage(void);
+
+// pholo_one.c
+int			philo_one(t_rules *rules);
 
 #endif

@@ -54,7 +54,7 @@ long long	time_diff(long long past, long long pres)
 	return (pres - past);
 }
 
-void	smart_sleep(long long time, t_rules *rules)
+void	make_sleep(long long time, t_rules *rules)
 {
 	long long	i;
 

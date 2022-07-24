@@ -25,7 +25,7 @@ void	philo_eats(t_philo *philo)
 	print_act(rules, philo->id, "is eating");
 	philo->t_last_meal = ft_timestamp();
 	pthread_mutex_unlock(&(rules->meal_check));
-	smart_sleep(rules->time_to_eat, rules);
+	make_sleep(rules->time_to_eat, rules);
 	(philo->x_ate)++;
 	pthread_mutex_unlock(&(rules->forks[philo->l_fork_id]));
 	pthread_mutex_unlock(&(rules->forks[philo->r_fork_id]));
@@ -48,7 +48,7 @@ void	*p_thread(void *void_philo)
 		if (rules->all_ate)
 			break ;
 		print_act(rules, philo->id, "is sleeping");
-		smart_sleep(rules->time_to_sleep, rules);
+		make_sleep(rules->time_to_sleep, rules);
 		print_act(rules, philo->id, "is thinking");
 		i++;
 	}
@@ -95,6 +95,8 @@ void	exit_launcher(t_rules *rules, t_philo *philo)
 		pthread_mutex_destroy(&(rules->forks[i]));
 	pthread_mutex_destroy(&(rules->writing));
 }
+
+
 
 int	launcher(t_rules *rules)
 {
