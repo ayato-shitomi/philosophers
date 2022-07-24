@@ -12,6 +12,11 @@
 
 #include "./includes/philo.h"
 
+/*
+	Do init
+	lanch
+*/
+
 int	main(int argc, char **argv)
 {
 	t_rules	rules;

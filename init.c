@@ -12,6 +12,10 @@
 
 #include "./includes/philo.h"
 
+/*
+	init mutex
+*/
+
 int	init_mutex(t_rules *rules)
 {
 	int	i;
@@ -28,6 +32,12 @@ int	init_mutex(t_rules *rules)
 		return (1);
 	return (0);
 }
+
+/*
+	init philo
+	i is number of philo.
+	make philo as number of philo.
+*/
 
 int	init_philo(t_rules *rules)
 {
@@ -46,6 +56,10 @@ int	init_philo(t_rules *rules)
 	return (0);
 }
 
+/*
+	init hub
+*/
+
 int	init_all(t_rules *rules, char **argv)
 {
 	rules->nb_philo = ft_basic_atoi(argv[1]);
@@ -54,7 +68,7 @@ int	init_all(t_rules *rules, char **argv)
 	rules->time_to_sleep = ft_basic_atoi(argv[4]);
 	rules->all_ate = 0;
 	rules->dieded = 0;
-	if (rules->nb_philo < 2 || 200 < rules->nb_philo)
+	if (rules->nb_philo < 1 || 200 < rules->nb_philo)
 		return (2);
 	if (rules->time_to_deth < 60 || rules->time_to_eat < 60
 		|| rules->time_to_sleep < 60)

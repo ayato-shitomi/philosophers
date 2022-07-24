@@ -104,6 +104,7 @@ int	launcher(t_rules *rules)
 	i = 0;
 	phi = rules->philo;
 	rules->first_timestamp = ft_timestamp();
+	printf("i : %d\nnb_philo : %d\n", i, rules->nb_philo);
 	while (i < rules->nb_philo)
 	{
 		if (pthread_create(&(phi[i].thread_id), NULL, p_thread, &(phi[i])))

@@ -156,3 +156,36 @@ ERROR 2 : `number_of_philosophers` is invalid.
 ### 11
 
 スレッドを作成する際にエラーが発見されました。
+
+## ✅技術的解説
+
+以下のような構造体によって哲学者とシュミレーションのルールが管理されます。
+
+```c
+typedef struct s_philo
+{
+	int				id;
+	int				x_ate;
+	int				l_fork_id;
+	int				r_fork_id;
+	long long		t_last_meal;
+	struct s_rules	*rules;
+	pthread_t		thread_id;
+}	t_philo;
+
+typedef struct s_rules
+{
+	int				nb_philo;
+	int				time_to_deth;
+	int				time_to_eat;
+	int				time_to_sleep;
+	int				nb_eat;
+	int				dieded;
+	int				all_ate;
+	long long		first_timestamp;
+	pthread_mutex_t	meal_check;
+	pthread_mutex_t	forks[201];
+	pthread_mutex_t	writing;
+	t_philo			philo[201];
+}	t_rules;
+```

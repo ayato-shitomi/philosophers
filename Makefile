@@ -3,7 +3,7 @@ CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror
 INCLUDE	=	-lpthread
 THDBG		=	-fsanitize=thread
-ADDBG		=	-fsanitize=address -fsanitize=leak
+ADDBG		=	-fsanitize=address -fsanitize=leak -g3
 CINC	=	./includes
 
 SRCS	=	init.c \

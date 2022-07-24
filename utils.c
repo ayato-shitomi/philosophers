@@ -37,6 +37,10 @@ int	ft_basic_atoi(const char *str)
 	return (rtn * sign);
 }
 
+/*
+	make timestamp
+*/
+
 long long	ft_timestamp(void)
 {
 	struct timeval	t;
