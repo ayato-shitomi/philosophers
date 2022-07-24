@@ -6,7 +6,7 @@
 /*   By: ashitomi<ashitomi@student.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 19:04:13 by ashitomi          #+#    #+#             */
-/*   Updated: 2022/06/18 19:04:13 by ashitomi         ###   ########.fr       */
+/*   Updated: 2022/07/24 20:45:27 by ashitomi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,8 @@ int	launcher(t_rules *rules)
 	i = 0;
 	phi = rules->philo;
 	rules->first_timestamp = ft_timestamp();
-	printf("i : %d\nnb_philo : %d\n", i, rules->nb_philo);
+	if (rules->nb_philo == 1)
+		return (philo_one(rules));
 	while (i < rules->nb_philo)
 	{
 		if (pthread_create(&(phi[i].thread_id), NULL, p_thread, &(phi[i])))
