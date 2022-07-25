@@ -2,13 +2,14 @@ NAME	=	philo
 CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror
 INCLUDE	=	-lpthread
-THDBG		=	-fsanitize=thread
-ADDBG		=	-fsanitize=address -fsanitize=leak -g3
+THDBG	=	-fsanitize=thread
+ADDBG	=	-fsanitize=address -fsanitize=leak -g3
 CINC	=	./includes
 
 SRCS	=	init.c \
 			launcher.c \
 			main.c \
+			philo_one.c \
 			print.c \
 			utils.c \
 			header_usage.c

@@ -78,6 +78,7 @@ void		make_sleep(long long time, t_rules *rules);
 // launcher.c
 int			launcher(t_rules *rules);
 void		exit_launcher(t_rules *rules, t_philo *philo);
+void		death_checker(t_rules *r, t_philo *p);
 
 // header_usage.c
 void		header(void);
