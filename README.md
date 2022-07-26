@@ -40,12 +40,12 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR P
 ```
 
 > 注意
-引数に数字が来た場合にはゼロとして処理します。
+引数に数字以外が来た場合にはゼロとして処理します。
 
 ### number_of_philosophers
 哲学者の数。<br>
 これはフォークの数と等しくなる。<br>
-条件：`2 <= number_of_philosophers <= 200`
+条件：`1 <= number_of_philosophers <= 200`
 
 ### time_to_die（ミリ秒単位）
 哲学者が死ぬまでの時間。<br>
