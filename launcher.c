@@ -96,8 +96,6 @@ void	exit_launcher(t_rules *rules, t_philo *philo)
 	pthread_mutex_destroy(&(rules->writing));
 }
 
-
-
 int	launcher(t_rules *rules)
 {
 	int		i;
